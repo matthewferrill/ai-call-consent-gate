@@ -1,0 +1,17 @@
+{
+  "name": "ai-call-consent-gate",
+  "version": "1.0.0",
+  "description": "Fail-closed consent state machine for AI phone systems. Blocks recording, transcription, and AI streaming until the caller affirmatively consents.",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/ReceptionistConsent.ts",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["consent", "call-recording", "compliance", "voice-ai", "state-machine", "wiretap"],
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
