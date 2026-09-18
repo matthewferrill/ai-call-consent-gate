@@ -49,6 +49,7 @@ describe("nationwide AI Receptionist notice", () => {
     expect(notice).toMatch(/Press 1 to consent/i);
     expect(notice).toMatch(/Press 2 for a non-recorded alternative/i);
     expect(notice).toMatch(/press 9 at any time to stop recording/i);
+    expect(notice).toMatch(/Go ahead and make your selection now\.$/);
   });
 
   it("refuses an unnamed business", () => {

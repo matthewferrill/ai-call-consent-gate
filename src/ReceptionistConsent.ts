@@ -11,7 +11,7 @@
  * the runtime boundary instead of in a launch checklist.
  */
 
-export const RECEPTIONIST_NOTICE_VERSION = "2026-07-31.1";
+export const RECEPTIONIST_NOTICE_VERSION = "2026-08-24.1";
 
 export type ReceptionistConsentStatus =
   | "notice-required"
@@ -83,7 +83,8 @@ export function buildNationwideReceptionistNotice(businessName: string): string 
     `You've reached ${name}. Before we continue: I am an AI receptionist. ` +
     "If you press 1, this call will be recorded, transcribed, and processed by our service providers " +
     "to handle your request. Press 1 to consent and continue. Press 2 for a non-recorded alternative, " +
-    "or hang up. After consenting, press 9 at any time to stop recording and automated processing."
+    "or hang up. After consenting, press 9 at any time to stop recording and automated processing. " +
+    "Go ahead and make your selection now."
   );
 }
 
